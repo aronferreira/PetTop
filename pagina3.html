@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetTop</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+        height: 100px;
+    }
+    #cabeçalho{
+        height: 80px;
+        background-color: #fff799ec;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+    
+        a{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 6px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #4F31A3;
+            top: 20px;
+            font-weight: 700;
+        }
+        #Inicio{
+            position: relative;
+           
+        }
+        #Loja{
+            position: relative;
+           
+        }
+        #Adoção{
+            position: relative;
+            border-bottom: 5px solid #4F31A3;
+    
+        }
+        #Agenda{
+            position: relative;
+        }
+        #Contato{
+            position: relative;
+        }
+        .anim{
+        transition-duration: 300ms;
+        }
+        .anim:hover{
+        transform: scale(110%);
+        background-color: white;
+        border-radius: 10px;
+        }
+
+        .animais{
+        width: fit-content;
+        height: fit-content;
+        float: right;
+        height: 50%;}
+
+        .conteudo{
+        margin: 0px 150px;
+        height: 550px;
+        }
+        .adotes{
+        margin-top: 50px;
+        height: 500px;
+        display: flex;
+        justify-content: space-between;
+        }
+        .adotes>p{
+        text-align: center;
+        font-size: 18px;
+        }
+        p>img{
+            max-height: 200px;
+            border-radius: 10px;
+        }
+        p>button{
+            margin-top: 10px;
+            transform: scale(130%);
+            border-radius: 5px;
+            padding: 5px;
+            background-color: #fff799ec;
+            color: #4F31A3;
+            font-weight: 700;
+            border: 2px solid #4F31A3;
+            cursor: pointer;
+            transition: 300ms;
+        }
+        p>button:hover{
+            transform: scale(140%);
+        }
+        p>button:active{
+            transform: translateY(1px);
+        }
+        footer{
+        background-color: #fff799ec;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        }
+        footer p{
+        margin: 0px 150px;
+        padding: 20px;
+        font-size: 18px;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div id="cabeçalho">
+            <div class="anim"><a id="Inicio" href="petshop2.html"><img class="animais" src="home.png">Início</a></div>
+            <div class="anim"><a id="Loja" href="pagina2.html"><img class="animais" src="shop2.png">Loja</a></div>
+            <div class="anim"><a id="Adoção" href="pagina3.html"><img class="animais" id="qet" src="qet.png">Adoção</a></div>
+            <div class="anim"><a id="Agenda" href="pagina4.html"><img class="animais" src="calendario.png">Agendar</a></div>
+            <div class="anim"><a id="Contato" href="pagina5.html"><img class="animais" src="telefone.png">Contato</a></div>
+     
+        </div>
+    </header>
+<div class="conteudo">
+    <h1>Adote já o seu bichinho!</h1>
+    <div class="adotes">
+        <p><img src="gatito.jpeg"><br>Reginaldo<br>Idade: 4 meses<br><button>Adote-me ❤</button></p>
+        <p><img src="lourival.jpg"><br>Lourival<br>Idade: 3 anos<br><button>Adote-me ❤</button></p>
+        <p><img src="geraldo.jpg"><br>Gerson<br>Idade: 22 anos<br><button>Adote-me ❤</button></p>
+        <p><img src="raimundo.jpg"><br>Raimundo<br>Idade: 1 ano<br><button>Adote-me ❤</button></p>
+
+
+    </div>
+</div>
+<footer>
+    <p>Autor: Bill Gates.</p><p>© 
+        Todos os direitos reservados.</p>
+    </footer>
+
+
+
+
+</body>
+</html>

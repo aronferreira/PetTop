@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetTop</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+        height: 100px;
+    }
+    #cabeçalho{
+        height: 80px;
+        background-color: #fff799ec;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+    
+        a{
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 6px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #4F31A3;
+            top: 20px;
+            font-weight: 700;
+        }
+        #Inicio{
+            position: relative;
+           
+        }
+        #Loja{
+            position: relative;
+           
+        }
+        #Adoção{
+            position: relative;
+    
+        }
+        #Agenda{
+            position: relative;
+        }
+        #Contato{
+            position: relative;
+            border-bottom: 5px solid #4F31A3;
+        }
+        .anim{
+        transition-duration: 300ms;
+        }
+        .anim:hover{
+        transform: scale(110%);
+        background-color: white;
+        border-radius: 10px;
+        }
+
+        .animais{
+        width: fit-content;
+        height: fit-content;
+        float: right;
+        height: 50%;}
+        #qet{
+        position: relative;
+        animation-name: cat;
+        transform: rotate(0deg);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        }
+        @keyframes cat {
+        0% { transform: rotate(0deg); }
+        2% { transform: rotate(10deg); }
+        5% { transform: rotate(0deg); }
+        7% { transform: rotate(-10deg); }
+        10% { transform: rotate(0deg); }
+        
+        }
+        
+        .tel{
+            height: 300px;
+            margin: 0px 150px;
+        }
+        #dive{
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            gap: 20px;
+        }
+
+        #dive>p{
+            font-size: 30px;
+            
+        }
+        #dive>img{
+            max-height: 200px;
+            border-radius: 10px;
+        }
+        footer{
+        background-color: #fff799ec;
+        display: flex;
+        justify-content: space-evenly;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        }
+        footer p{
+        margin: 0px 150px;
+        padding: 20px;
+        font-size: 18px;
+        }
+    
+        
+        </style>
+</head>
+<body>
+    <header>
+        <div id="cabeçalho">
+            <div class="anim"><a id="Inicio" href="petshop2.html"><img class="animais" src="home.png">Início</a></div>
+            <div class="anim"><a id="Loja" href="pagina2.html"><img class="animais" src="shop2.png">Loja</a></div>
+            <div class="anim"><a id="Adoção" href="pagina3.html"><img class="animais" id="qet" src="qet.png">Adoção</a></div>
+            <div class="anim"><a id="Agenda" href="pagina4.html"><img class="animais" src="calendario.png">Agendar</a></div>
+            <div class="anim"><a id="Contato" href="pagina5.html"><img class="animais" src="telefone.png">Contato</a></div>
+     
+        </div>
+    
+        </header>
+        <div class="tel">
+            <h1>Contato:</h1>
+            <div id="dive">
+            <img src="call.gif">
+            <p><span style="font-weight: 700; color: green;">Whatsapp:</span> 11 95033-8771
+            <br><span style="font-weight: 700;">Telefone fixo:</span> 11 2398-3946
+            
+            </p>
+
+         </div>
+
+        </div>
+    <footer>
+        <p>Autor: Bill Gates.</p><p>© 
+        Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

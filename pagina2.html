@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetTop</title>
+    <style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        height: 100px;
+    }
+    #cabeçalho{
+        height: 80px;
+        background-color: #fff799ec;
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    a{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 6px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #4F31A3;
+        top: 20px;
+        font-weight: 700;
+    }
+    #Inicio{
+        position: relative;
+       
+    }
+    #Loja{
+        position: relative;
+        border-bottom: 5px solid #4F31A3;
+       
+    }
+    #Adoção{
+        position: relative;
+
+    }
+    #Agenda{
+        position: relative;
+    }
+    #Contato{
+        position: relative;
+    }
+    .anim{
+        transition-duration: 300ms;
+    }
+    .anim:hover{
+        transform: scale(110%);
+        background-color: white;
+        border-radius: 10px;
+    }
+    .animais{
+        width: fit-content;
+        height: fit-content;
+        float: right;
+        height: 50%;}
+
+        #qet{
+        position: relative;
+        animation-name: cat;
+        transform: rotate(0deg);
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes cat {
+        0% { transform: rotate(0deg); }
+        2% { transform: rotate(10deg); }
+        5% { transform: rotate(0deg); }
+        7% { transform: rotate(-10deg); }
+        10% { transform: rotate(0deg); }
+        
+    }
+    .conteudo{
+        height: 800px;
+        margin: 0px 150px;
+    }
+    .produtos{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+        margin-top: 50px;
+    }
+    .imagens{
+        max-width: 200px;
+        min-height: 200px;
+
+    }
+    .descricao{
+        font-size: 18px;
+        text-align: center;
+        
+    }
+    footer{
+        background-color: #fff799ec;
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+    footer p{
+        padding: 5px;
+        font-size: 18px;
+    }
+    
+
+</style>
+
+</head>
+
+<body>
+    <header>
+        <div id="cabeçalho">
+            <div class="anim"><a id="Inicio" href="petshop2.html"><img class="animais" src="home.png">Início</a></div>
+            <div class="anim"><a id="Loja" href="pagina2.html"><img class="animais" src="shop2.png">Loja</a></div>
+            <div class="anim"><a id="Adoção" href="pagina3.html"><img class="animais" id="qet" src="qet.png">Adoção</a></div>
+            <div class="anim"><a id="Agenda" href="pagina4.html"><img class="animais" src="calendario.png">Agendar</a></div>
+            <div class="anim"><a id="Contato" href="pagina5.html"><img class="animais" src="telefone.png">Contato</a></div>
+     
+        </div>
+    </header>
+    <div class="conteudo">
+        <h1>Nossos produtos (apenas presencialmente):</h1>
+        <div class="produtos">
+            <p class="descricao"><img class="imagens" src="raçaocaoadulto.jpg"><br><br>Ração Pedigree 15KG para cachorro adulto<br><span style="font-weight: bold">Sabor: Carne.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$39,99</sub></span></p>
+            <p class="descricao"><img class="imagens" src="raçaogatofilhote.jpg"><br><br>Ração Whiskas 1KG para gato filhote<br><span style="font-weight: bold">Sabor: Carne e leite.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$18,99</sub></span></p>
+            <p class="descricao"><img class="imagens" src="gatoadulto.jpg"><br><br>Ração Golden 3KG para gato adulto<br><span style="font-weight: bold">Sabor: Salmão.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$50,00</sub></span></p>
+            <p class="descricao"><img class="imagens" src="camacachorro.jpg"><br><br>Cama para cachorro quadrada<br><span style="font-weight: bold">Impermeavel</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$60,00</sub></span></p>
+        </div>
+            <div class="produtos">
+             <p class="descricao"><img class="imagens" src="coleira.jpg"><br><br>Coleira para gatos e cachorros até 8KG<br><span style="font-weight: bold">Antipulgas e carrapatos.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$119,99</sub></span></p>
+             <p class="descricao"><img class="imagens" src="gatoadulto.jpg"><br><br>Ração Golden 3KG para gato adulto<br><span style="font-weight: bold">Sabor: Salmão.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$50,00</sub></span></p>
+             <p class="descricao"><img class="imagens" src="gatoadulto.jpg"><br><br>Ração Golden 3KG para gato adulto<br><span style="font-weight: bold">Sabor: Salmão.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$50,00</sub></span></p>
+             <p class="descricao"><img class="imagens" src="gatoadulto.jpg"><br><br>Ração Golden 3KG para gato adulto<br><span style="font-weight: bold">Sabor: Salmão.</span><br><span style="color: rgb(20, 190, 1)">Preço:<sub style="font-size: 28px"> R$50,00</sub></span></p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <p>Autor: Bill Gates.</p><p>© 
+            Todos os direitos reservados.</p>
+        </footer>
+</body>
+
+</html>
